@@ -9,7 +9,7 @@ Start-Sleep -Second 15
 try 
 {
     Write-Host "Invoking the test method directly"
-    $result = Invoke-RestMethod -Uri http://localhost:5000/operations/sayhelloXYZ
+    $result = Invoke-RestMethod -Uri http://localhost:5000/operations/sayhello
     $result | Write-Host -ForegroundColor Green
     
     Write-Host "Invoking the test via Cmdlet/SDK"
