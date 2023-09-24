@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="RunTool" BeforeTargets="CoreCompile">
+    <Exec Command="tsp install" />
+    <Exec Command="tsp compile ." />
+  </Target>
+</Project>

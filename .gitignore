@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# NPM package lock
+package-lock.json
+
 # User-specific files
 *.rsuser
 *.suo
@@ -31,6 +34,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+[Oo]ut/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
