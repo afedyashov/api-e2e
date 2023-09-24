@@ -4,7 +4,7 @@ Write-Host "Starting the Api Server"
 $job = dotnet run --project "$PSScriptRoot/../ApiServer/ApiServer.csproj" --launch-profile dev > "$PSScriptRoot/server.log" 2>&1 &
 
 Write-Host "Waiting for the Api Server to initialize"
-Start-Sleep -Second 5
+Start-Sleep -Second 15
 
 try 
 {
