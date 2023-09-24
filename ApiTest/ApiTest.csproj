@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiServer\ApiServer.csproj" />
+    <ProjectReference Include="..\ApiCmdlet\ApiCmdlet.csproj" />
+  </ItemGroup>
+
+  <Target Name="RunTool" AfterTargets="AfterBuild">
+    <Exec Command="pwsh -c $(MSBuildProjectDirectory)/start-use-stop.ps1" IgnoreStandardErrorWarningFormat="true" />
+  </Target>
+</Project>
