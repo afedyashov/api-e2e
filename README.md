@@ -33,4 +33,5 @@ https://www.npmjs.com/package/nswag
 
 # Running tests
 
-    pwsh -c ./Tests/start-use-stop.ps1
+    dotnet build ./ApiCmdlet/
+    pwsh -c ./ApiTest/start-use-stop.ps1
